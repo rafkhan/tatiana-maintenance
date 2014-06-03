@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Advanced Slider</title>
+
+<link rel="stylesheet" type="text/css" href="css/style.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="css/advanced-slider-base.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="css/curved-square/curved-square.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="css/scrollbar-7-light/scrollbar-7-light.css" media="screen"/>
+
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="js/jquery.advancedSlider.min.js"></script>
+<!--[if IE]><script type="text/javascript" src="js/excanvas.compiled.js"></script><![endif]-->
+
+<script type="text/javascript">
+
+	jQuery(document).ready(function($){
+		$('.slider').advancedSlider({width: 700, 
+									 height: 400, 
+									 skin: 'curved-square', 
+									 scrollbarSkin: 'scrollbar-7-light', 
+									 alignType: 'centerCenter', 
+									 horizontalSlices: 7, 
+									 verticalSlices: 4, 
+									 fadeNavigationArrows: false, 
+									 navigationButtonsNumbers: true, 
+									 thumbnailsType: 'navigation', 
+									 thumbnailSync: true, 
+									 thumbnailOrientation: 'vertical', 
+									 thumbnailArrows: false, 
+									 thumbnailScrollbar: true, 
+									 thumbnailMouseScroll: true, 
+									 thumbnailMouseWheel: true, 
+									 slideProperties:{
+										 0: {effectType:'scale', slicePattern: 'spiralMarginToCenterCW'}, 
+										 1: {effectType:'fade', horizontalSlices: 1, verticalSlices: 1, slideshowDelay: 10000}, 
+										 2: {effectType:'slide', horizontalSlices: 10, verticalSlices: 1, slicePattern: 'rightToLeft', sliceDuration: 700}, 
+										 3: {effectType:'height', horizontalSlices: 10, verticalSlices: 1, slicePattern: 'leftToRight', sliceDuration: 500, slicePoint: 'rightBottom'}, 
+										 4: {effectType:'scale', sliceDuration: 800}, 
+										 5: {effectType:'height', horizontalSlices: 1, verticalSlices: 10, slicePattern: 'bottomToTop', sliceDuration: 700, slicePoint: 'centerTop'}, 
+										 6: {effectType:'slide', slicePattern: 'topLeftToBottomRight', sliceDuration: 700, slideStartPosition: 'rightBottom', slideStartRatio: 0.5}, 
+										 7: {effectType:'fade'}, 
+										 8: {effectType:'slide', horizontalSlices:10, verticalSlices:1, slicePattern:'rightToLeft', sliceDuration:800, slideStartPosition:'verticalAlternativ'}
+									 }
+		});
+	});
+	
+</script>
+
+</head>
+
+<body>
+	
+    <div class="slider">
+        <div class="slider-item">
+    		<img src="http://bqworks.com/products/assets/example-images/image1.jpg" alt=""/>
+    		<img class="thumbnail" src="http://bqworks.com/products/assets/example-thumbs/image1.jpg" alt=""/>
+      	</div>
+        
+        <div class="slider-item">
+            <img src="http://bqworks.com/products/assets/example-images/image2.jpg" alt=""/>
+            <img class="thumbnail" src="http://bqworks.com/products/assets/example-thumbs/image2.jpg" alt=""/>
+      	</div>
+        
+        <div class="slider-item">
+            <img src="http://bqworks.com/products/assets/example-images/image3.jpg" alt=""/>
+            <img class="thumbnail" src="http://bqworks.com/products/assets/example-thumbs/image3.jpg" alt=""/>
+      	</div>
+        
+        <div class="slider-item">
+            <img src="http://bqworks.com/products/assets/example-images/image4.jpg" alt=""/>
+            <img class="thumbnail" src="http://bqworks.com/products/assets/example-thumbs/image4.jpg" alt=""/>
+      	</div>
+        
+        <div class="slider-item">
+            <img src="http://bqworks.com/products/assets/example-images/image5.jpg" alt=""/>
+            <img class="thumbnail" src="http://bqworks.com/products/assets/example-thumbs/image5.jpg" alt=""/>
+      	</div>
+    
+        <div class="slider-item">
+            <img src="http://bqworks.com/products/assets/example-images/image6.jpg" alt=""/>
+            <img class="thumbnail" src="http://bqworks.com/products/assets/example-thumbs/image6.jpg" alt=""/>
+      	</div>
+    
+        <div class="slider-item">
+            <img src="http://bqworks.com/products/assets/example-images/image7.jpg" alt=""/>
+            <img class="thumbnail" src="http://bqworks.com/products/assets/example-thumbs/image7.jpg" alt=""/>
+      	</div>
+    
+        <div class="slider-item">
+            <img src="http://bqworks.com/products/assets/example-images/image8.jpg" alt=""/>
+            <img class="thumbnail" src="http://bqworks.com/products/assets/example-thumbs/image8.jpg" alt=""/>
+      	</div>
+        
+        <div class="slider-item">
+            <img src="http://bqworks.com/products/assets/example-images/image9.jpg" alt=""/>
+            <img class="thumbnail" src="http://bqworks.com/products/assets/example-thumbs/image9.jpg" alt=""/>
+      	</div>
+    
+        <div class="slider-item">
+            <img src="http://bqworks.com/products/assets/example-images/image10.jpg" alt=""/>
+            <img class="thumbnail" src="http://bqworks.com/products/assets/example-thumbs/image10.jpg" alt=""/>
+        </div>
+    </div>
+    
+    <div id="example-description">    	
+        <p>
+        	This example shows you thumbnail images in a vertical layout. You can also see the possibility of using the scrollbar, the mouse movement or the mouse wheel to navigate through the thumbnails.
+        </p>
+        <div id="navigation">
+        	<a href="example_basic.html">Basic</a>
+            <a href="example_thumbs1.html">Thumbs Horizontal</a>
+            <a href="example_thumbs2.html">Thumbs Vertical</a>
+            <a href="example_html.html">HTML Content</a>
+            <a href="example_lightbox.html">Lightbox Example</a>
+            <a href="example_minimal.html">Minimal</a>
+        </div>
+    </div>
+    
+</body>
+
+</html>

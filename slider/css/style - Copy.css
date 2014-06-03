@@ -1,0 +1,72 @@
+body
+{
+	background-color:#F1F1F1;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	color:#999;
+}
+
+.slider
+{
+	margin:20px auto;
+	height:400px;
+}
+
+
+.slider .caption ul
+{
+	padding-left:20px;
+}
+
+
+/*this is for example_api.html*/
+#custom_controls
+{
+	width:210px;
+	margin:0px auto;
+}
+
+
+/*this is for the description of each example and the buttons used to navigate through the examples*/
+#example-description
+{
+	margin:0px;
+	padding:0px;
+	background-color:#DDD;
+	border-top:solid 1px #CCC;
+	border-bottom:solid 1px #CCC;
+}
+
+
+#example-description p
+{
+	color:#666;
+	font-style:italic;
+	width:750px;
+	margin:0px auto;
+	padding:10px 0px;
+	line-height:18px;
+	text-align:center;
+}
+
+
+#example-description #navigation
+{
+	width:705px;
+	height:25px;
+	margin:10px auto 0px;
+}
+
+
+#example-description #navigation a
+{
+	background-color:#F1F1F1;
+	text-decoration:none;
+	color:#666;
+	padding:5px 10px;
+	margin:0px 5px;
+	border:#CCC solid 1px;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+}

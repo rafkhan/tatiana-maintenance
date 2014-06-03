@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Advanced Slider</title>
+
+<link rel="stylesheet" type="text/css" href="css/style.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="css/advanced-slider-base.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="css/minimal-small/minimal-small.css" media="screen"/>
+
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.advancedSlider.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<!--[if IE]><script type="text/javascript" src="js/excanvas.compiled.js"></script><![endif]-->
+
+<script type="text/javascript">
+
+	jQuery(document).ready(function($){
+		$('.slider').advancedSlider({width:750, 
+									 height:345, 
+									 skin: 'minimal-small', 
+									 shuffle: true, 
+									 fadeSlideshowControls: false, 
+									 pauseSlideshowOnHover: true, 
+									 timerRadius: 20, 
+									 timerStrokeColor1: '#ffffff', 
+									 timerStrokeColor2: '#000000', 
+									 timerStrokeOpacity1: 0.8, 
+									 timerStrokeWidth1: 6, 
+									 timerStrokeWidth2: 3, 
+									 effectType: 'simpleSlide', 
+									 simpleSlideEasing: 'easeInOutExpo', 
+									 fadeNavigationArrows: false, 
+									 navigationButtonsNumbers: true
+		});
+	});
+	
+</script>
+
+</head>
+
+<body>
+	
+    <div class="slider">
+    	<div class="slider-item">
+    		<img src="http://bqworks.com/products/assets/example-images/image1.jpg" alt=""/>
+    		<img class="thumbnail" src="http://bqworks.com/products/assets/example-thumbs/image1.jpg" alt=""/>
+      	</div>
+        
+        <div class="slider-item">
+            <img src="http://bqworks.com/products/assets/example-images/image2.jpg" alt=""/>
+            <img class="thumbnail" src="http://bqworks.com/products/assets/example-thumbs/image2.jpg" alt=""/>
+      	</div>
+        
+        <div class="slider-item">
+            <img src="http://bqworks.com/products/assets/example-images/image3.jpg" alt=""/>
+            <img class="thumbnail" src="http://bqworks.com/products/assets/example-thumbs/image3.jpg" alt=""/>
+      	</div>
+        
+        <div class="slider-item">
+            <img src="http://bqworks.com/products/assets/example-images/image4.jpg" alt=""/>
+            <img class="thumbnail" src="http://bqworks.com/products/assets/example-thumbs/image4.jpg" alt=""/>
+      	</div>
+        
+        <div class="slider-item">
+            <img src="http://bqworks.com/products/assets/example-images/image5.jpg" alt=""/>
+            <img class="thumbnail" src="http://bqworks.com/products/assets/example-thumbs/image5.jpg" alt=""/>
+      	</div>
+    
+        <div class="slider-item">
+            <img src="http://bqworks.com/products/assets/example-images/image6.jpg" alt=""/>
+            <img class="thumbnail" src="http://bqworks.com/products/assets/example-thumbs/image6.jpg" alt=""/>
+      	</div>
+    
+        <div class="slider-item">
+            <img src="http://bqworks.com/products/assets/example-images/image7.jpg" alt=""/>
+            <img class="thumbnail" src="http://bqworks.com/products/assets/example-thumbs/image7.jpg" alt=""/>
+      	</div>
+    
+        <div class="slider-item">
+            <img src="http://bqworks.com/products/assets/example-images/image8.jpg" alt=""/>
+            <img class="thumbnail" src="http://bqworks.com/products/assets/example-thumbs/image8.jpg" alt=""/>
+      	</div>
+        
+        <div class="slider-item">
+            <img src="http://bqworks.com/products/assets/example-images/image9.jpg" alt=""/>
+            <img class="thumbnail" src="http://bqworks.com/products/assets/example-thumbs/image9.jpg" alt=""/>
+      	</div>
+    
+        <div class="slider-item">
+            <img src="http://bqworks.com/products/assets/example-images/image10.jpg" alt=""/>
+            <img class="thumbnail" src="http://bqworks.com/products/assets/example-thumbs/image10.jpg" alt=""/>
+        </div>
+    </div>
+    
+    
+    <div id="example-description">    	
+        <p>
+        	This example uses a minimalistic skin that has all the navigation elements inside the slide.
+        </p>
+        <div id="navigation">
+        	<a href="example_basic.html">Basic</a>
+            <a href="example_thumbs1.html">Thumbs Horizontal</a>
+            <a href="example_thumbs2.html">Thumbs Vertical</a>
+            <a href="example_html.html">HTML Content</a>
+            <a href="example_lightbox.html">Lightbox Example</a>
+            <a href="example_minimal.html">Minimal</a>
+        </div>
+    </div>
+    
+</body>
+
+</html>

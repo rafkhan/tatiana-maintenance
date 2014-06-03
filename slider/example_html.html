@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Advanced Slider</title>
+
+<link rel="stylesheet" type="text/css" href="css/style.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="css/advanced-slider-base.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="css/light-round-extended/light-round-extended.css" media="screen"/>
+
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.advancedSlider.min.js"></script>
+<!--[if IE]><script type="text/javascript" src="js/excanvas.compiled.js"></script><![endif]-->
+
+<script type="text/javascript">
+
+	jQuery(document).ready(function($){
+		$('.slider').advancedSlider({width: 840, 
+									 height: 400, 
+									 skin: 'light-round-extended', 
+									 slideshow: false, 
+									 slideshowControls: false, 
+									 fadeNavigationArrows: false, 
+									 thumbnailsType: 'none', 
+									 horizontalSlices: 8, 
+									 verticalSlices: 4,
+									 slideProperties:{
+											0: {effectType: 'scale'}, 
+											1: {effectType: 'fade'}, 
+											2: {htmlDuringTransition:false}, 
+											3: {effectType: 'scale', slicePattern: 'spiralMarginToCenterCW'}
+									 }
+		});
+	});
+	
+</script>
+
+</head>
+
+<body>
+	
+	<div class="slider">
+		<div class="slider-item">
+			<img src="http://bqworks.com/products/assets/example-images/image1.jpg"/>
+			<div class="html">
+				<div class="content-box">
+					<p class="title">Inline HTML content</p> 
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p> 
+					<div class="slide-button"><a href="#">Read More</a></div>
+				</div>
+			</div>
+		</div>
+      	
+		<div class="slider-item">
+			<div class="html">
+				<div class="background">
+					<div class="images-box" style="float: left;">
+						<div class="image-box"><img src="http://bqworks.com/products/assets/example-medium/image7.jpg" width="230" height="140" /></div> 
+						<div class="image-box"><img src="http://bqworks.com/products/assets/example-medium/image8.jpg" width="230" height="140" /></div> 
+						<div class="image-box"><img src="http://bqworks.com/products/assets/example-medium/image9.jpg" width="230" height="140" /></div> 
+						<div class="image-box"><img src="http://bqworks.com/products/assets/example-medium/image10.jpg" width="230" height="140" /></div>
+					</div> 
+					<div class="content-box" style="float: right;">
+						<p class="title">Inline HTML content</p> 
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+						<div class="slide-button"><a href="#">Read More</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="slider-item">
+        	<img src="http://sliderpro.net/wp-content/uploads/2011/07/nuit_blanche.jpg"/>
+			<div class="html">
+				<iframe src="http://www.youtube.com/embed/JVuUwvUUPro?wmode=transparent" width="840" height="400" frameborder="0"></iframe>
+			</div>
+		</div>
+		
+		<div class="slider-item">
+			<div class="html">
+				<div class="background">
+					<div class="content-box" style="float: left;">
+						<p class="title">Inline HTML content</p> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+						<div class="slide-button"><a href="#">Read More</a></div>
+                    </div>
+                    <div class="images-box" style="float: right;">
+                    	<div class="image-box"><img src="http://bqworks.com/products/assets/example-medium/image8.jpg" width="230" height="140" /></div> 
+						<div class="image-box"><img src="http://bqworks.com/products/assets/example-medium/image10.jpg" width="230" height="140" /></div> 
+						<div class="image-box"><img src="http://bqworks.com/products/assets/example-medium/image7.jpg" width="230" height="140" /></div> 
+						<div class="image-box"><img src="http://bqworks.com/products/assets/example-medium/image9.jpg" width="230" height="140" /></div>
+                    </div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+    
+    
+    <div id="example-description">    	
+        <p>
+        	This example illustrates the possibility of using inline HTML content. As you can see, you can display any type HTML content, even YouTube/Vimeo videos or other flash content.
+        </p>
+        <div id="navigation">
+        	<a href="example_basic.html">Basic</a>
+            <a href="example_thumbs1.html">Thumbs Horizontal</a>
+            <a href="example_thumbs2.html">Thumbs Vertical</a>
+            <a href="example_html.html">HTML Content</a>
+            <a href="example_lightbox.html">Lightbox Example</a>
+            <a href="example_minimal.html">Minimal</a>
+        </div>
+    </div>
+    
+</body>
+
+</html>

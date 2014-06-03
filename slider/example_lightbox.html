@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Advanced Slider</title>
+
+<link rel="stylesheet" type="text/css" href="css/style.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="css/advanced-slider-base.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="css/light-square/light-square.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="css/prettyPhoto.css" media="screen"/>
+
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<!--[if IE]><script type="text/javascript" src="js/excanvas.compiled.js"></script><![endif]-->
+<script type="text/javascript" src="js/jquery.prettyPhoto.custom.min.js"></script>
+<script type="text/javascript" src="js/jquery.advancedSlider.min.js"></script>
+
+<script type="text/javascript">
+	
+	var slider;
+	
+	jQuery(document).ready(function($) {
+		slider = $('.slider').advancedSlider({width: 840, 
+											  height: 400, 
+											  skin: 'light-square', 
+											  scrollbarSkin: 'scrollbar-3-light', 
+											  lightbox: true, 
+											  lightboxDefaultWidth: 800, 
+											  lightboxDefaultHeight: 400, 											  
+											  horizontalSlices: 8, 
+											  verticalSlices: 4, 
+											  navigationButtons: false, 
+											  fadeNavigationButtons: true, 
+											  thumbnailsType: 'navigation', 
+											  thumbnailSync: true, 
+											  visibleThumbnails: 4, 
+											  thumbnailButtons: true, 
+											  fadeThumbnailScrollbar: true, 
+											  hideCaption: true, 
+											  captionSize: 35, 
+											  slideProperties:{
+												  0: {captionHideEffect: 'slide'}, 
+												  1: {captionShowEffect: 'fade', captionPosition: 'top'}, 
+												  2: {captionHideEffect: 'slide'}, 
+												  3: {captionBackgroundColor: '#5e5e5e', captionShowEffect: 'fade', captionHideEffect: 'fade', captionPosition: 'top'}, 
+												  4: {captionBackgroundColor: '#4154e8', captionHideEffect: 'slide'}, 
+												  5: {captionShowEffect: 'fade', captionPosition: 'top'}, 
+												  7: {captionHideEffect: 'slide'}, 
+												  9: {captionHideEffect: 'slide'}
+											  }, 
+											  transitionComplete:onTransitionComplete
+		});
+	});
+	
+	
+	function previous() {
+		slider.previousSlide();
+	}	
+	
+	function next() {
+		slider.nextSlide();
+	}	
+	
+	function onTransitionComplete(obj) {
+		//console.log(obj.type, obj.index, obj.data);
+	}
+	
+</script>
+
+</head>
+
+<body>
+	
+    <div class="slider">
+		<div class="slider-item">
+			<img src="http://bqworks.com/products/assets/example-images/image1.jpg" alt=""/>
+			<div class="caption">Click on the slide to open the lightbox which will contain a Youtube video.</div>
+			<img class="thumbnail" src="http://bqworks.com/products/assets/example-thumbs/image1.jpg" title="YouTube" alt=""/>
+			<a class="lightbox" href="http://www.youtube.com/watch?v=JVuUwvUUPro" title="Nuit Blanche explores a fleeting moment between two strangers.">Nuit Blanche - Arev Manoukian</a>
+		</div>
+		
+		<div class="slider-item">
+			<img src="http://bqworks.com/products/assets/example-images/image2.jpg" alt=""/>
+			<div class="caption">Click on the slide to open the lightbox which will contain an image.</div>
+			<img class="thumbnail" src="http://bqworks.com/products/assets/example-thumbs/image2.jpg" title="Image" alt=""/>
+			<a class="lightbox" href="http://bqworks.com/products/assets/example-images/image2.jpg" title="Some description of the image.">Image title</a>
+		</div>
+		
+		<div class="slider-item">
+			<img src="http://bqworks.com/products/assets/example-images/image3.jpg" alt=""/>    
+			<div class="caption">Click on the slide to open the lightbox which will contain a Flash movie.</div>
+			<img class="thumbnail" src="http://bqworks.com/products/assets/example-thumbs/image3.jpg" title="Flash" alt=""/>
+			<a class="lightbox" href="http://www.adobe.com/jp/events/cs3_web_edition_tour/swfs/perform.swf?width=792&height=294" title="This is a sample of flash content.">Flash</a>
+		</div>
+		
+		<div class="slider-item">
+			<img src="http://bqworks.com/products/assets/example-images/image4.jpg" alt=""/>
+			<div class="caption">Click on the slide to open the lightbox which will contain a Youtube video.</div>
+			<img class="thumbnail" src="http://bqworks.com/products/assets/example-thumbs/image4.jpg" title="YouTube" alt=""/>
+			<a class="lightbox" href="http://www.youtube.com/watch?v=JVuUwvUUPro" title="Nuit Blanche explores a fleeting moment between two strangers.">Nuit Blanche - Arev Manoukian</a>
+		</div>
+		
+		<div class="slider-item">
+			<img src="http://bqworks.com/products/assets/example-images/image5.jpg" alt=""/>
+			<div class="caption">Click on the slide to open the lightbox which will contain an image.</div>
+			<img class="thumbnail" src="http://bqworks.com/products/assets/example-thumbs/image5.jpg" title="Image" alt=""/>
+			<a class="lightbox" href="http://bqworks.com/products/assets/example-images/image5.jpg" title="Some description of the image.">Image title</a>
+		</div>
+		
+		<div class="slider-item">
+			<img src="http://bqworks.com/products/assets/example-images/image6.jpg" alt=""/>    
+			<div class="caption">Click on the slide to open the lightbox which will contain an image</div>
+			<img class="thumbnail" src="http://bqworks.com/products/assets/example-thumbs/image6.jpg" title="Image" alt=""/>
+			<a class="lightbox" href="http://bqworks.com/products/assets/example-images/image6.jpg" title="Some description of the image.">Image title</a>
+		</div>
+		
+		<div class="slider-item">
+			<img src="http://bqworks.com/products/assets/example-images/image7.jpg" alt=""/>
+			<div class="caption">Click on the slide to open the lightbox which will contain a Flash movie.</div>
+			<img class="thumbnail" src="http://bqworks.com/products/assets/example-thumbs/image7.jpg" title="Flash" alt=""/>
+			<a class="lightbox" href="http://www.adobe.com/jp/events/cs3_web_edition_tour/swfs/perform.swf?width=792&height=294" title="This is a sample of flash content.">Flash content</a>
+		</div>
+		
+		<div class="slider-item">
+			<img src="http://bqworks.com/products/assets/example-images/image8.jpg" alt=""/>
+			<div class="caption">Click on the slide to open the lightbox which will contain an image.</div>
+			<img class="thumbnail" src="http://bqworks.com/products/assets/example-thumbs/image8.jpg" title="Image" alt=""/>
+			<a class="lightbox" href="http://bqworks.com/products/assets/example-images/image8.jpg" title="Some description of the image.">Image title</a>
+		</div>
+		
+		<div class="slider-item">
+			<img src="http://bqworks.com/products/assets/example-images/image9.jpg" alt=""/>    
+			<div class="caption">Click on the slide to open the lightbox which will contain an image</div>
+			<img class="thumbnail" src="http://bqworks.com/products/assets/example-thumbs/image9.jpg" title="Image" alt=""/>
+			<a class="lightbox" href="http://bqworks.com/products/assets/example-images/image9.jpg" title="Some description of the image.">Image title</a>
+		</div>
+		
+		<div class="slider-item">
+			<img src="http://bqworks.com/products/assets/example-images/image10.jpg" alt=""/>
+			<div class="caption">Click on the slide to open the lightbox which will contain an image.</div>
+			<img class="thumbnail" src="http://bqworks.com/products/assets/example-thumbs/image10.jpg" title="Image" alt=""/>
+			<a class="lightbox" href="http://bqworks.com/products/assets/example-images/image10.jpg" title="Some description of the image.">Image title</a>
+        </div>
+    </div>
+    
+    <div id="custom_controls" style="margin-bottom:20px;">
+        <input type="button" value="Previous Slide" onclick="previous();"/>
+        <input type="button" value="Next Slide" onclick="next();"/>
+    </div>
+    
+    <div id="example-description">
+    	<p>
+        	<strong>Click on the slide to open the modal box!</strong>
+        </p>    	
+        <p>
+        	This example illustrates the use of API and the integration with prettyPhoto. prettyPhoto is built into the slider for ease of use but you can use other lightbox script as well if you want. Also, you can see that it's possible to navigate through the slides using external buttons. Another feature illustrated in this example is the slider's ability to display the caption only when the mouse is over the slide. Also, please note that the slideshow will pause when a modal box is opened.
+        </p>
+        <div id="navigation">
+        	<a href="example_basic.html">Basic</a>
+            <a href="example_thumbs1.html">Thumbs Horizontal</a>
+            <a href="example_thumbs2.html">Thumbs Vertical</a>
+            <a href="example_html.html">HTML Content</a>
+            <a href="example_lightbox.html">Lightbox Example</a>
+            <a href="example_minimal.html">Minimal</a>
+        </div>
+    </div>
+</body>
+
+</html>
